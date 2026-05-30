@@ -1,0 +1,4 @@
+date,direction,uid,ipAddress,remoteHostname,protocol,port,connectCount,denyCount,byteCountIn,byteCountOut,connectingExecutable,parentAppExecutable
+2026-05-29T07:00:00Z,out,501,1.1.1.1,z.example,6,443,0,0,50,50,"/bin/z",
+2026-05-29T07:00:00Z,out,501,1.1.1.2,a.example,6,443,0,0,50,50,"/bin/a",
+2026-05-29T07:00:00Z,out,501,1.1.1.3,m.example,6,443,0,0,50,50,"/bin/m",

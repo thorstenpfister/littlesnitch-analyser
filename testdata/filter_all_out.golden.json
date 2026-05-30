@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "tool": "littlesnitch-analyser",
+    "tool_version": "0.1.0",
+    "generated_at": "2026-05-29T12:00:00Z",
+    "observed_window": {
+      "first_row_date": "2026-05-29T07:00:00Z",
+      "last_row_date": "2026-05-29T07:00:00Z"
+    },
+    "filters": {
+      "uid": [
+        0
+      ],
+      "connecting_executable": [],
+      "parent_executable": [
+        "/Applications/User.app/Contents/MacOS/User"
+      ]
+    },
+    "csv_columns": [
+      "date",
+      "direction",
+      "uid",
+      "ipAddress",
+      "remoteHostname",
+      "protocol",
+      "port",
+      "connectCount",
+      "denyCount",
+      "byteCountIn",
+      "byteCountOut",
+      "connectingExecutable",
+      "parentAppExecutable"
+    ],
+    "rows_total": 3,
+    "rows_matched_filter": 0,
+    "rows_parsed": 0,
+    "rows_skipped": 0
+  },
+  "totals": {
+    "byteCountIn": 0,
+    "byteCountOut": 0,
+    "connectCount": 0,
+    "denyCount": 0,
+    "distinct_connections": 0,
+    "distinct_hosts": 0,
+    "distinct_executables": 0
+  },
+  "connections": [],
+  "rollups": {
+    "by_executable": [],
+    "by_host": [],
+    "by_direction": {
+      "in": {
+        "byteCountIn": 0,
+        "byteCountOut": 0,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_connections": 0
+      },
+      "out": {
+        "byteCountIn": 0,
+        "byteCountOut": 0,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_connections": 0
+      }
+    },
+    "denied": []
+  },
+  "skipped_rows": []
+}

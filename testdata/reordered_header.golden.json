@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "tool": "littlesnitch-analyser",
+    "tool_version": "0.1.0",
+    "generated_at": "2026-05-29T12:00:00Z",
+    "observed_window": {
+      "first_row_date": "2026-05-29T07:00:00Z",
+      "last_row_date": "2026-05-29T07:00:00Z"
+    },
+    "filters": {
+      "uid": [],
+      "connecting_executable": [],
+      "parent_executable": []
+    },
+    "csv_columns": [
+      "connectingExecutable",
+      "date",
+      "direction",
+      "uid",
+      "ipAddress",
+      "remoteHostname",
+      "protocol",
+      "port",
+      "connectCount",
+      "denyCount",
+      "byteCountIn",
+      "byteCountOut",
+      "parentAppExecutable"
+    ],
+    "rows_total": 2,
+    "rows_matched_filter": 2,
+    "rows_parsed": 2,
+    "rows_skipped": 0
+  },
+  "totals": {
+    "byteCountIn": 9892,
+    "byteCountOut": 414,
+    "connectCount": 0,
+    "denyCount": 0,
+    "distinct_connections": 2,
+    "distinct_hosts": 2,
+    "distinct_executables": 2
+  },
+  "connections": [
+    {
+      "direction": "in",
+      "uid": 65,
+      "ipAddress": "192.168.0.91",
+      "remoteHostname": "",
+      "hostname_known": false,
+      "protocol": 17,
+      "protocolName": "udp",
+      "port": 5353,
+      "connectingExecutable": "/usr/sbin/mDNSResponder",
+      "parentAppExecutable": "",
+      "connectCount": 0,
+      "denyCount": 0,
+      "byteCountIn": 9777,
+      "byteCountOut": 350,
+      "firstSeen": "2026-05-29T07:00:00Z",
+      "lastSeen": "2026-05-29T07:00:00Z"
+    },
+    {
+      "direction": "out",
+      "uid": 501,
+      "ipAddress": "15.197.251.99",
+      "remoteHostname": "",
+      "hostname_known": false,
+      "protocol": 6,
+      "protocolName": "tcp",
+      "port": 443,
+      "connectingExecutable": "/Applications/Signal.app/Contents/Frameworks/Signal Helper (Renderer).app/Contents/MacOS/Signal Helper (Renderer)",
+      "parentAppExecutable": "/Applications/Signal.app/Contents/MacOS/Signal",
+      "connectCount": 0,
+      "denyCount": 0,
+      "byteCountIn": 115,
+      "byteCountOut": 64,
+      "firstSeen": "2026-05-29T07:00:00Z",
+      "lastSeen": "2026-05-29T07:00:00Z"
+    }
+  ],
+  "rollups": {
+    "by_executable": [
+      {
+        "connectingExecutable": "/usr/sbin/mDNSResponder",
+        "parentAppExecutable": "",
+        "byteCountIn": 9777,
+        "byteCountOut": 350,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_hosts": 1,
+        "distinct_connections": 1
+      },
+      {
+        "connectingExecutable": "/Applications/Signal.app/Contents/Frameworks/Signal Helper (Renderer).app/Contents/MacOS/Signal Helper (Renderer)",
+        "parentAppExecutable": "/Applications/Signal.app/Contents/MacOS/Signal",
+        "byteCountIn": 115,
+        "byteCountOut": 64,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_hosts": 1,
+        "distinct_connections": 1
+      }
+    ],
+    "by_host": [
+      {
+        "host": "192.168.0.91",
+        "hostname_known": false,
+        "byteCountIn": 9777,
+        "byteCountOut": 350,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_executables": 1
+      },
+      {
+        "host": "15.197.251.99",
+        "hostname_known": false,
+        "byteCountIn": 115,
+        "byteCountOut": 64,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_executables": 1
+      }
+    ],
+    "by_direction": {
+      "in": {
+        "byteCountIn": 9777,
+        "byteCountOut": 350,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_connections": 1
+      },
+      "out": {
+        "byteCountIn": 115,
+        "byteCountOut": 64,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_connections": 1
+      }
+    },
+    "denied": []
+  },
+  "skipped_rows": []
+}

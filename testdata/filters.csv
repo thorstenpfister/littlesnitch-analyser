@@ -1,0 +1,4 @@
+date,direction,uid,ipAddress,remoteHostname,protocol,port,connectCount,denyCount,byteCountIn,byteCountOut,connectingExecutable,parentAppExecutable
+2026-05-29T07:00:00Z,out,0,10.0.0.1,a.example,6,443,1,0,100,10,"/bin/root-app","/Applications/Root.app/Contents/MacOS/Root"
+2026-05-29T07:00:00Z,out,501,10.0.0.2,b.example,6,443,1,0,200,20,"/bin/user-app","/Applications/User.app/Contents/MacOS/User"
+2026-05-29T07:00:00Z,out,65,10.0.0.3,c.example,17,53,1,0,300,30,"/usr/sbin/mDNSResponder",

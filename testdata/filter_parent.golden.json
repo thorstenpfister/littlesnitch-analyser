@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "tool": "littlesnitch-analyser",
+    "tool_version": "0.1.0",
+    "generated_at": "2026-05-29T12:00:00Z",
+    "observed_window": {
+      "first_row_date": "2026-05-29T07:00:00Z",
+      "last_row_date": "2026-05-29T07:00:00Z"
+    },
+    "filters": {
+      "uid": [],
+      "connecting_executable": [],
+      "parent_executable": [
+        "/Applications/User.app/Contents/MacOS/User"
+      ]
+    },
+    "csv_columns": [
+      "date",
+      "direction",
+      "uid",
+      "ipAddress",
+      "remoteHostname",
+      "protocol",
+      "port",
+      "connectCount",
+      "denyCount",
+      "byteCountIn",
+      "byteCountOut",
+      "connectingExecutable",
+      "parentAppExecutable"
+    ],
+    "rows_total": 3,
+    "rows_matched_filter": 1,
+    "rows_parsed": 1,
+    "rows_skipped": 0
+  },
+  "totals": {
+    "byteCountIn": 200,
+    "byteCountOut": 20,
+    "connectCount": 1,
+    "denyCount": 0,
+    "distinct_connections": 1,
+    "distinct_hosts": 1,
+    "distinct_executables": 1
+  },
+  "connections": [
+    {
+      "direction": "out",
+      "uid": 501,
+      "ipAddress": "10.0.0.2",
+      "remoteHostname": "b.example",
+      "hostname_known": true,
+      "protocol": 6,
+      "protocolName": "tcp",
+      "port": 443,
+      "connectingExecutable": "/bin/user-app",
+      "parentAppExecutable": "/Applications/User.app/Contents/MacOS/User",
+      "connectCount": 1,
+      "denyCount": 0,
+      "byteCountIn": 200,
+      "byteCountOut": 20,
+      "firstSeen": "2026-05-29T07:00:00Z",
+      "lastSeen": "2026-05-29T07:00:00Z"
+    }
+  ],
+  "rollups": {
+    "by_executable": [
+      {
+        "connectingExecutable": "/bin/user-app",
+        "parentAppExecutable": "/Applications/User.app/Contents/MacOS/User",
+        "byteCountIn": 200,
+        "byteCountOut": 20,
+        "connectCount": 1,
+        "denyCount": 0,
+        "distinct_hosts": 1,
+        "distinct_connections": 1
+      }
+    ],
+    "by_host": [
+      {
+        "host": "b.example",
+        "hostname_known": true,
+        "byteCountIn": 200,
+        "byteCountOut": 20,
+        "connectCount": 1,
+        "denyCount": 0,
+        "distinct_executables": 1
+      }
+    ],
+    "by_direction": {
+      "in": {
+        "byteCountIn": 0,
+        "byteCountOut": 0,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_connections": 0
+      },
+      "out": {
+        "byteCountIn": 200,
+        "byteCountOut": 20,
+        "connectCount": 1,
+        "denyCount": 0,
+        "distinct_connections": 1
+      }
+    },
+    "denied": []
+  },
+  "skipped_rows": []
+}

@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "tool": "littlesnitch-analyser",
+    "tool_version": "0.1.0",
+    "generated_at": "2026-05-29T12:00:00Z",
+    "observed_window": {
+      "first_row_date": "2026-05-29T07:00:00Z",
+      "last_row_date": "2026-05-29T07:00:00Z"
+    },
+    "filters": {
+      "uid": [],
+      "connecting_executable": [],
+      "parent_executable": []
+    },
+    "csv_columns": [
+      "date",
+      "direction",
+      "uid",
+      "ipAddress",
+      "remoteHostname",
+      "protocol",
+      "port",
+      "connectCount",
+      "denyCount",
+      "byteCountIn",
+      "byteCountOut",
+      "connectingExecutable",
+      "parentAppExecutable"
+    ],
+    "rows_total": 3,
+    "rows_matched_filter": 3,
+    "rows_parsed": 3,
+    "rows_skipped": 0
+  },
+  "totals": {
+    "byteCountIn": 150,
+    "byteCountOut": 150,
+    "connectCount": 0,
+    "denyCount": 0,
+    "distinct_connections": 3,
+    "distinct_hosts": 3,
+    "distinct_executables": 3
+  },
+  "connections": [
+    {
+      "direction": "out",
+      "uid": 501,
+      "ipAddress": "1.1.1.1",
+      "remoteHostname": "z.example",
+      "hostname_known": true,
+      "protocol": 6,
+      "protocolName": "tcp",
+      "port": 443,
+      "connectingExecutable": "/bin/z",
+      "parentAppExecutable": "",
+      "connectCount": 0,
+      "denyCount": 0,
+      "byteCountIn": 50,
+      "byteCountOut": 50,
+      "firstSeen": "2026-05-29T07:00:00Z",
+      "lastSeen": "2026-05-29T07:00:00Z"
+    },
+    {
+      "direction": "out",
+      "uid": 501,
+      "ipAddress": "1.1.1.2",
+      "remoteHostname": "a.example",
+      "hostname_known": true,
+      "protocol": 6,
+      "protocolName": "tcp",
+      "port": 443,
+      "connectingExecutable": "/bin/a",
+      "parentAppExecutable": "",
+      "connectCount": 0,
+      "denyCount": 0,
+      "byteCountIn": 50,
+      "byteCountOut": 50,
+      "firstSeen": "2026-05-29T07:00:00Z",
+      "lastSeen": "2026-05-29T07:00:00Z"
+    },
+    {
+      "direction": "out",
+      "uid": 501,
+      "ipAddress": "1.1.1.3",
+      "remoteHostname": "m.example",
+      "hostname_known": true,
+      "protocol": 6,
+      "protocolName": "tcp",
+      "port": 443,
+      "connectingExecutable": "/bin/m",
+      "parentAppExecutable": "",
+      "connectCount": 0,
+      "denyCount": 0,
+      "byteCountIn": 50,
+      "byteCountOut": 50,
+      "firstSeen": "2026-05-29T07:00:00Z",
+      "lastSeen": "2026-05-29T07:00:00Z"
+    }
+  ],
+  "rollups": {
+    "by_executable": [
+      {
+        "connectingExecutable": "/bin/a",
+        "parentAppExecutable": "",
+        "byteCountIn": 50,
+        "byteCountOut": 50,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_hosts": 1,
+        "distinct_connections": 1
+      },
+      {
+        "connectingExecutable": "/bin/m",
+        "parentAppExecutable": "",
+        "byteCountIn": 50,
+        "byteCountOut": 50,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_hosts": 1,
+        "distinct_connections": 1
+      },
+      {
+        "connectingExecutable": "/bin/z",
+        "parentAppExecutable": "",
+        "byteCountIn": 50,
+        "byteCountOut": 50,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_hosts": 1,
+        "distinct_connections": 1
+      }
+    ],
+    "by_host": [
+      {
+        "host": "a.example",
+        "hostname_known": true,
+        "byteCountIn": 50,
+        "byteCountOut": 50,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_executables": 1
+      },
+      {
+        "host": "m.example",
+        "hostname_known": true,
+        "byteCountIn": 50,
+        "byteCountOut": 50,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_executables": 1
+      },
+      {
+        "host": "z.example",
+        "hostname_known": true,
+        "byteCountIn": 50,
+        "byteCountOut": 50,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_executables": 1
+      }
+    ],
+    "by_direction": {
+      "in": {
+        "byteCountIn": 0,
+        "byteCountOut": 0,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_connections": 0
+      },
+      "out": {
+        "byteCountIn": 150,
+        "byteCountOut": 150,
+        "connectCount": 0,
+        "denyCount": 0,
+        "distinct_connections": 3
+      }
+    },
+    "denied": []
+  },
+  "skipped_rows": []
+}

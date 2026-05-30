@@ -1,0 +1,4 @@
+date,direction,uid,ipAddress,remoteHostname,protocol,port,connectCount,denyCount,byteCountIn,byteCountOut,connectingExecutable,parentAppExecutable
+2026-05-29T07:00:00Z,out,501,9.9.9.9,svc.example,6,443,1,0,100,10,"/bin/app",
+2026-05-29T08:00:00Z,out,501,9.9.9.9,svc.example,6,443,2,0,200,20,"/bin/app",
+2026-05-29T06:00:00Z,out,501,9.9.9.9,svc.example,6,443,3,1,50,5,"/bin/app",
