@@ -30,6 +30,17 @@ Little Snitch and requires a licensed installation of that product to be useful.
 - **Determinism.** Identical input produces byte-identical output (stable sort orders,
   fixed field ordering), so runs can be diffed and golden tests are stable.
 
+## Install
+
+Via Homebrew (self-tapped from this repo):
+
+```sh
+brew tap thorstenpfister/littlesnitch-analyser https://github.com/thorstenpfister/littlesnitch-analyser
+brew install littlesnitch-analyser
+```
+
+`brew upgrade` keeps it current. Or build from source — see below.
+
 ## Build
 
 ```sh
